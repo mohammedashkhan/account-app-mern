@@ -3,8 +3,8 @@ import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
 import Posts from './components/Posts/Posts';
-import Form from './components/Form/Form';
-import { getPosts } from './actions/posts';
+import Form from './components/Form/IncomeForm';
+import { getIncomes } from './actions/incomes';
 import useStyles from './styles';
 import memories from './images/memories.png';
 
@@ -14,7 +14,7 @@ const App = () => {
   const classes = useStyles();
 
   useEffect(() => {
-    dispatch(getPosts());
+    dispatch(getIncomes());
   }, [currentId, dispatch]);
 
   return (

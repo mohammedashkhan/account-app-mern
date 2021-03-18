@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 
-import posts from './posts';
+import incomes from './incomes';
+import expenses from './expenses';
 
-export const reducers = combineReducers({ posts });
+export const reducers = combineReducers({ incomes,expenses });
